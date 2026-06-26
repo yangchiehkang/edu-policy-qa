@@ -1,0 +1,297 @@
+
+\documentclass{article}%ForLaTeX2e
+\usepackage{iclr2024_conference,times}
+
+%Optionalmathcommandsfromhttps://github.com/goodfeli/dlbook_notation.
+\input{math_commands.tex}
+
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{CJK}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage{minted}
+\usepackage{lipsum}
+\usepackage{listings}
+
+% define AIbox
+\usepackage[most]{tcolorbox}
+\usepackage{float}
+\usepackage{xspace}
+\tcbset{
+  aibox/.style={
+    width=474.18663pt,
+    top=10pt,
+    colback=white,
+    colframe=black,
+    colbacktitle=black,
+    enhanced,
+    center,
+    attach boxed title to top left={yshift=-0.1in,xshift=0.15in},
+    boxed title style={boxrule=0pt,colframe=white,},
+  }
+}
+\newtcolorbox{AIbox}[2][]{aibox,title=#2,#1}
+
+\title{Call for Proposal [Title of your Proposal]  }
+
+%Authorsmustnotappearinthesubmittedversion.Theyshouldbehidden
+%aslongasthe\iclrfinalcopymacroremainscommentedoutbelow.
+%Non-anonymoussubmissionswillberejectedwithoutreview.
+
+\author{[Your NAME]\thanks{Place your name here.}\\
+The Chinese University of Hong Kong, Shenzhen, China\\
+% Pittsburgh,PA15213,USA\\
+\texttt{[Your Email] }\\
+% \And
+% JiQ.Ren\&YevgenyLeNet\\
+% DepartmentofComputationalNeuroscience\\
+% UniversityoftheWitwatersrand\\
+% Joburg,SouthAfrica\\
+% \texttt{\{robot,net\}@wits.ac.za}\\
+% \AND
+% Coauthor\\
+% Affiliation\\
+% Address\\
+% \texttt{email}
+}
+
+
+
+\newcommand{\fix}{\marginpar{FIX}}
+\newcommand{\new}{\marginpar{NEW}}
+
+%\iclrfinalcopy%Uncommentforcamera-readyversion,butNOTforsubmission.
+\iclrfinalcopy
+
+\begin{document}
+\begin{CJK}{UTF8}{gbsn}
+
+\maketitle
+
+
+\begin{abstract}
+
+    Here you could summarize the proposal in a few sentences.
+    
+    { \color{blue} You are free to adjust the template and to discuss anything else that you believe is helpful and informative.}
+\end{abstract}
+
+\section{Introduction}
+
+\textbf{Background}~
+Basically define the background and why you want to investigate the topic.
+
+
+\textbf{Challenge}~ discuss the main technical difficulties it might meet if there exist.
+
+
+
+
+
+
+\section{Task Definition}
+
+
+What it is the input and output for your task.
+
+
+\textbf{Objective}~
+The objective of the proposal.
+
+
+% \paragraph{Submission}
+% \begin{itemize}
+%     \item A project proposal;
+%     \item A project report (max 6 pages);
+%     \item A project poster.
+% \end{itemize}
+
+
+
+% \subsection{Philosophy}
+
+% Select one of given proposals, or submit a customed project with a proposal that needs to be approved.
+
+
+% \begin{itemize}
+%     \item Vertical LLMs in a specific language
+%     \item Improving specific abilities of LLMs
+%     \item Evaluation of LLMs 
+%     \item Dataset building 
+% \end{itemize}
+
+
+
+
+
+\section{Proposal Requirements}
+\label{sec: proposal requirements}
+
+The proposal should present a comprehensive and well-structured plan for your research project. It must be clear, concise, and meticulously organized. Here are the requirements for the proposal:
+
+\begin{enumerate}
+    \item Clearly state your research topic, including the motivation behind it;
+    % \item Provide a detailed weekly plan for your research;
+    \item Specify the data and techniques you plan to utilize, such as the model you intend to train;
+    \item Describe the results you anticipate and the research problem you aim to solve;
+    \item Identify any potential risks associated with conducting the experiment. What will be your course of action if the results are contrary to your expectations?
+    \item Include related works if necessary.
+\end{enumerate}
+
+Template for the research proposal can be found at 
+
+\url{https://www.overleaf.com/read/dwrbfmzkbgqj#3dde3f}.
+
+
+
+% \section{Report Requirements}
+% \label{sec: report requirements}
+
+
+% \section{Poster Requirements}
+% \label{sec: poster requirements}
+
+
+\section{Potential Research Topics}
+
+\subsection{Weak to Strong}
+
+\subsubsection{Merge Small Models}
+
+\begin{itemize}
+    \item All we need is just a few fine-tuned models: \url{https://arxiv.org/abs/2403.19522}
+    \item Training-Free Pretrained Model Merging: \url{https://arxiv.org/pdf/2403.01753.pdf}
+\end{itemize}
+
+\subsubsection{Decoding Learning}
+
+\begin{itemize}
+    \item Proxy Tuning: \url{https://arxiv.org/abs/2401.08565}
+    \item Decoding-time Realignment of Language Models: \url{https://arxiv.org/abs/2402.02992}
+\end{itemize}
+
+\subsubsection{Jailbreaking}
+
+\begin{itemize}
+    \item Weak-to-Strong Jailbreaking on Large Language Models: \url{https://arxiv.org/abs/2401.17256}
+\end{itemize}
+
+
+\subsection{TinyAgent}
+
+\begin{itemize}
+    \item ReALM: \url{https://arxiv.org/pdf/2403.20329.pdf}
+    \item Multi-Agent Collaboration: \url{https://arxiv.org/abs/2404.01663}
+\end{itemize}
+
+
+
+% \subsection{}
+\label{sec:project topics}
+
+\subsection{Vertical LLMs in a specific language}
+
+\subsection{Improve specific abilities of LLMs}
+
+\subsection{Evaluation of LLMs}
+
+\subsection{Dataset building}
+
+
+
+% \section{Some useful links}
+
+% \subsection{Pre-trained models}
+
+% You could use one of many of the following models:
+% \begin{itemize}
+%     \item Llama2-\{7b, 13b, 70b\} \url{https://huggingface.co/meta-llama},
+%     \item Phoenix-7b \url{https://github.com/FreedomIntelligence/LLMZoo},
+%     \item Baichuan2-\{7B, 13B\} \url{https://huggingface.co/baichuan-inc},
+%     \item or any open-source models...
+% \end{itemize}
+
+% \subsection{Optional training tricks}
+
+% You can use other parameter-efficient fine-tuning methods to be able to fine-tune large models on limited GPU resources, here are some useful open source github repositories that may help:
+% \begin{itemize}
+%     \item PEFT \url{https://github.com/huggingface/peft}
+%     \item OpenDelta \url{https://github.com/thunlp/OpenDelta}
+%     \item QLoRA \url{https://github.com/artidoro/qlora}
+% \end{itemize}
+
+% \subsection{Training frameworks}
+
+% Using notebooks for long-term model training is inconvenient in some cases. You can also try the following alternative model training frameworks:
+
+% \begin{itemize}
+%     \item LLMZoo \url{https://github.com/FreedomIntelligence/LLMZoo}
+%     \item stanford\_alpaca \url{https://github.com/tatsu-lab/stanford_alpaca}
+%     \item LlaMA-Factory \url{https://github.com/hiyouga/LLaMA-Factory}
+%     \item FastChat \url{https://github.com/lm-sys/FastChat}
+%     \item DeepSpeed-Chat \url{https://github.com/microsoft/DeepSpeedExamples/tree/master/applications/DeepSpeed-Chat}
+% \end{itemize}
+
+
+% \section{Submission Format}
+% \label{sec:submission}
+
+% In your submission, you are expected to provide a experiment report that with the following section
+
+% \begin{itemize}
+%     \item \textbf{Research Topic:} Clearly state the research topic you have chosen to investigate.
+%     \item \textbf{Experiment design:} Describe the design of your experiments, including the methodology and approach you employed.
+%     \item \textbf{Code implementation:} Present your code implementation, demonstrating how you translated your ideas into code.
+%     \item \textbf{Result analysis:} Collect and present the results obtained from your experiments, along with an analysis of the insights gained.
+%     \item \textbf{Conclusion:} Conclude your report by summarizing the key findings and outcomes of your research.
+% \end{itemize}
+
+% \paragraph{Template}
+% Template for the report can be found at 
+
+% \url{https://www.overleaf.com/read/fkshynghrrgk#901680}.
+
+% \section{Grading Criteria}
+
+% The grading for this assignment is based on the following criteria:
+
+% \begin{itemize}
+%     \item \textbf{[5 marks]} Code Quality: Evaluation of the quality of your code.
+%     \item \textbf{[15 marks]} Report Quality: Among these 15 marks, 5 are allocated for the clarity of your report, 5 for the quality of your experimental results (completeness, experimental rigor, and technical innovation), and 5 for your experimental analysis, which includes case studies, sensitivity analysis of individual experiment components, ablation studies, and any other interesting discussions.
+%     \item \textbf{[1 mark Bonus]} This bonus mark is awarded if you tackle a significant task not listed in Section~\ref{sec:task}. We encourage innovative and meaningful endeavors, but the significance is subject to evaluation.
+%     \item \textbf{[1 mark Bonus]} An additional bonus mark is awarded for exceptionally clean and clear code. This bonus may not be granted if you attach your code as supplementary materials. Code clarity is crucial for this bonus.
+
+% \end{itemize}
+
+
+
+% \section{Last Tip}
+
+% Please do not submit too loooooog reports. Be concise and say something that matters.
+
+\newpage
+\section*{Acknowledgment}
+
+Please acknowledge this course if you publish any materials based on this assignment.
+
+\appendix
+
+
+\bibliography{iclr2024_conference}
+\bibliographystyle{iclr2024_conference}
+
+% \appendix
+% \section{Appendix}
+
+
+\section{Dataset}
+\section{Dataset}
+\section{Dataset}
+\section{Dataset}
+\section{Dataset}
+\section{Dataset}
+
+\end{CJK}
+\end{document}

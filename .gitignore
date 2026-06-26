@@ -1,0 +1,62 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs / LaTeX generated files
+*.aux
+*.log
+*.out
+*.synctex.gz
+*.toc
+*.bbl
+*.blg
+文件列表.txt
+
+# Raw / external datasets
+data/external/
+data/raw_docs/
+
+# Large generated data
+data/processed_docs/
+data/vector_store/
+indexes/
+kaggle_upload/
+
+# Vector / index files
+*.npy
+*.npz
+*.faiss
+*.index
+*.pkl
+
+# Documents that may be copyrighted
+*.docx
+data/**/*.pdf
+
+# Keep project report PDF if needed
+!main.pdf
+
+# Model outputs / generated outputs
+data/outputs/
+
+# Optional large result cache
+data/results/*.jsonl
+
+# Secrets
+.env
+.env.*
+*.key
+config.local.yaml
+secrets.yaml

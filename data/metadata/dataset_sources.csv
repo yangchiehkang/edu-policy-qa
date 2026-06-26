@@ -1,0 +1,5 @@
+source_id,name,type,url,usage
+S001,SyllabusQA,course logistics QA dataset,https://github.com/umass-ml4ed/syllabusqa,main dataset candidate
+S002,Open Syllabus Dataset,large-scale syllabus dataset,https://opensyllabus.github.io/osp-dataset-docs/index.html,optional large-scale syllabus source
+S003,UMich Syllabus Collection,course syllabus and websites,https://github.com/PeterQiu0516/UMich-Syllabus-Collection,raw course document source
+S004,macloo Course Syllabi,public course syllabi,https://github.com/macloo/course-syllabi,raw course document source
